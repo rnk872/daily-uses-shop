@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Monday to Sunday Mall</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>🛒 Monday to Sunday Mall</h1>
+  <p>Everything you need, every day</p>
+</header>
+
+<!-- SEARCH -->
+<div class="top-bar">
+  <input type="text" id="searchInput" placeholder="Search products...">
+</div>
+
+<!-- FILTER BUTTONS -->
+<div class="filters">
+  <button onclick="filterProducts('all')">All</button>
+  <button onclick="filterProducts('snacks')">Snacks</button>
+  <button onclick="filterProducts('nuts')">Nuts</button>
+  <button onclick="filterProducts('biscuits')">Biscuits</button>
+  <button onclick="filterProducts('drinks')">Drinks</button>
+  <button onclick="filterProducts('ration')">Ration</button>
+</div>
+
+<!-- PRODUCTS -->
+<div class="products" id="productList"></div>
+
+<!-- CART -->
+<div class="cart">
+  <h2>🛒 Cart</h2>
+  <ul id="cartItems"></ul>
+  <p>Total: ₹<span id="total">0</span></p>
+  <button onclick="orderWhatsApp()">Order on WhatsApp</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
